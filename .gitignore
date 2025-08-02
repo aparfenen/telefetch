@@ -1,0 +1,24 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Byte-compiled
+*.so
+
+# IDEs
+.idea/
+.vscode/
+
+# Environments
+.env
+.venv/
+.env.*
+
+# Output
+*.session
+messages.txt
+*.log
+
+# OS files
+.DS_Store

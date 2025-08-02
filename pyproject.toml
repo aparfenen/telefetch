@@ -1,0 +1,14 @@
+[project]
+name = "telefetch"
+version = "0.1.0"
+description = "Fetch Telegram messages fast and easy using Telethon."
+authors = [{ name="Anna Parfenenkova" }]
+license = "MIT"
+readme = "README.md"
+dependencies = [
+    "telethon>=1.30.0"
+]
+requires-python = ">=3.8"
+
+[project.scripts]
+telefetch = "telefetch.cli:main"
