@@ -1,4 +1,5 @@
 import json
+from datetime import datetime
 from pathlib import Path
 
 from telethon.sync import TelegramClient
@@ -27,10 +28,22 @@ class TelegramDownloader:
             chat_id_or_username,
             out_path,
             limit=10000,
-            output_format="txt"
+            output_format="txt",
+            min_date=None,
+            max_date=None
     ):
         chat = self.client.get_entity(chat_id_or_username)
         messages = self.client.get_messages(chat, limit=limit)
+
+        # Filter messages by date if min_date or max_date are set
+        if min_date or max_date:
+            messages = [
+                msg for msg in messages
+                if msg.date and (
+                    (min_date is None or msg.date.date() >= min_date) and
+                    (max_date is None or msg.date.date() <= max_date)
+                )
+            ]
 
         Path(out_path).parent.mkdir(parents=True, exist_ok=True)
 
