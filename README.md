@@ -1,5 +1,9 @@
 # telefetch
-Fetch Telegram messages fast and easy using Telethon.
+[![Release](https://img.shields.io/github/v/release/aparfenen/telefetch)](https://github.com/aparfenen/telefetch/releases)
+[![License](https://img.shields.io/github/license/aparfenen/telefetch)](https://github.com/aparfenen/telefetch/blob/main/LICENSE)
+  
+Minimal command-line tool for downloading Telegram messages using the Telethon library.
+Fetch Telegram messages fast and easy using Telethon.  
 
 
 ## Install

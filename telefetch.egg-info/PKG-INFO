@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: telefetch
+Version: 0.1.0
+Summary: Fetch Telegram messages fast and easy using Telethon.
+Author: Anna Parfenenkova
+License-Expression: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: telethon>=1.30.0
+Dynamic: license-file
+
+# telefetch
+Telefetch - lightweight Python tool for downloading message history from Telegram chats using the Telethon library. 

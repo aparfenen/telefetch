@@ -1,0 +1,2 @@
+[console_scripts]
+telefetch = telefetch.cli:main

@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+telefetch/__init__.py
+telefetch/cli.py
+telefetch/downloader.py
+telefetch.egg-info/PKG-INFO
+telefetch.egg-info/SOURCES.txt
+telefetch.egg-info/dependency_links.txt
+telefetch.egg-info/entry_points.txt
+telefetch.egg-info/requires.txt
+telefetch.egg-info/top_level.txt
