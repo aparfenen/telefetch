@@ -9,11 +9,14 @@ def main():
     parser.add_argument("--phone", required=True)
     parser.add_argument("--chat", required=True, help="Username or chat ID")
     parser.add_argument("--out", required=True, help="Output .txt file")
-    parser.add_argument("--limit", type=int, default=1000)
+    parser.add_argument("--limit", type=int, default=10000)
+    parser.add_argument("--format", choices=["txt", "json", "md"], default="txt",
+                        help="Output format: txt (default), json, or md")
 
     args = parser.parse_args()
 
     dl = TelegramDownloader(args.api_id, args.api_hash, args.phone)
     dl.connect()
-    dl.download_messages(args.chat, args.out, args.limit)
+    dl.download_messages(args.chat, args.out, args.limit, output_format=args.format)
+
     dl.close()

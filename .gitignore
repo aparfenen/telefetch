@@ -19,6 +19,7 @@ __pycache__/
 *.session
 messages.txt
 *.log
+*.egg-info/
 
 # OS files
 .DS_Store

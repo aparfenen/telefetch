@@ -16,12 +16,13 @@ pip install -e .
 ## Usage
 ```
 telefetch \
-  --api-id <API_ID> \          # Your Telegram API ID (get from https://my.telegram.org)
-  --api-hash <API_HASH> \      # Your Telegram API Hash
-  --phone <PHONE> \            # Your phone number linked to Telegram (e.g. +12345678901)
-  --chat <CHAT> \              # Target chat: @username, group/channel name, or numeric ID
-  --out messages.txt \         # Output file path
-  --limit 1000                  # Max number of messages to fetch (default: 1000)
+  --api-id <API_ID> \            # Your Telegram API ID (get from https://my.telegram.org)
+  --api-hash <API_HASH> \        # Your Telegram API Hash
+  --phone <PHONE> \              # Your phone number linked to Telegram (e.g. +12345678901)
+  --chat <CHAT> \                # Target chat: @username, group/channel name, or numeric ID
+  --out messages.txt \           # Output file path
+  --limit 1000 \                 # Max number of messages to fetch (default: 10000)
+  --format txt|json|md           # Output format (default: txt)
 ```
 
 ### First-Time Login
